@@ -1,0 +1,24 @@
+{
+    "prefix": ">",
+    
+    "status": [
+        {
+            "status": ">help", 
+            "time": 60.0 
+        },
+        {
+            "status": "Aishiteiru!", 
+            "time": 30.0 
+        }
+    ], 
+    
+    "embed_color": [225, 144, 48],
+    
+    "pagination_timeout": 360.0,
+    
+    "owners": [], 
+    
+    "token": "",
+    
+    "testing_token": ""
+}

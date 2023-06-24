@@ -1,0 +1,228 @@
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+Unhandled exception during Client.run shutdown.
+task: <Task finished name='Task-33' coro=<Menu._internal_loop() done, defined at /usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py:517> exception=ClientOSError(1, '[SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2672)')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 533, in _internal_loop
+    done, pending = await asyncio.wait(
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 384, in wait
+    return await _wait(fs, timeout, return_when, loop)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 491, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 580, in _internal_loop
+    await self.clear()
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/http.py", line 300, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2672)
+[2J
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.commands.help loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.commands.owner loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.commands.moderation loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.commands.anime loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.commands.xash loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.listeners.events loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.listeners.errors loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.commands.test loaded
+[34m19:34:47[39m [1m[[34mINFO[39m][0m cogs.listeners.test loaded
+
+[32m19:34:47[39m [1m[[32mINFO[39m][0m HoshinoBot#4042 active
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 143, in wrapped
+    ret = await coro(*args, **kwargs)
+TypeError: Test.test() missing 1 required keyword-only argument: 'b'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/client.py", line 490, in _run_event
+    await coro(*args, **kwargs)
+  File "/root/HoshinoBot/cogs/listeners/errors/errors.py", line 58, in on_command_error
+    raise err
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/bot.py", line 1357, in invoke
+    await ctx.command.invoke(ctx)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 936, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 152, in wrapped
+    raise CommandInvokeError(exc) from exc
+nextcord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: Test.test() missing 1 required keyword-only argument: 'b'
+Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 143, in wrapped
+    ret = await coro(*args, **kwargs)
+TypeError: Test.test() missing 1 required keyword-only argument: 'b'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/client.py", line 490, in _run_event
+    await coro(*args, **kwargs)
+  File "/root/HoshinoBot/cogs/listeners/errors/errors.py", line 58, in on_command_error
+    raise err
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/bot.py", line 1357, in invoke
+    await ctx.command.invoke(ctx)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 936, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 152, in wrapped
+    raise CommandInvokeError(exc) from exc
+nextcord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: Test.test() missing 1 required keyword-only argument: 'b'
+Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 143, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/root/HoshinoBot/cogs/commands/xash/xash.py", line 87, in xash
+    bool_hostname = bool(search(args["hostname"], hostname, IGNORECASE))
+  File "/usr/lib/python3.10/re.py", line 200, in search
+    return _compile(pattern, flags).search(string)
+  File "/usr/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.10/sre_parse.py", line 955, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 550, in _parse
+    raise source.error("unterminated character set",
+re.error: unterminated character set at position 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/client.py", line 490, in _run_event
+    await coro(*args, **kwargs)
+  File "/root/HoshinoBot/cogs/listeners/errors/errors.py", line 58, in on_command_error
+    raise err
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/bot.py", line 1357, in invoke
+    await ctx.command.invoke(ctx)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 936, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/commands/core.py", line 152, in wrapped
+    raise CommandInvokeError(exc) from exc
+nextcord.ext.commands.errors.CommandInvokeError: Command raised an exception: error: unterminated character set at position 0
+[2J
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.commands.help loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.commands.owner loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.commands.moderation loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.commands.anime loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.commands.xash loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.listeners.events loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.listeners.errors loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.commands.test loaded
+[34m19:40:20[39m [1m[[34mINFO[39m][0m cogs.listeners.test loaded
+
+[32m19:40:20[39m [1m[[32mINFO[39m][0m HoshinoBot#4042 active
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+Unhandled exception during Client.run shutdown.
+task: <Task finished name='Task-167' coro=<Menu._internal_loop() done, defined at /usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py:517> exception=ClientOSError(1, '[SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2672)')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 533, in _internal_loop
+    done, pending = await asyncio.wait(
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 384, in wait
+    return await _wait(fs, timeout, return_when, loop)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 491, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 580, in _internal_loop
+    await self.clear()
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/http.py", line 300, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2672)
+Unhandled exception during Client.run shutdown.
+task: <Task finished name='Task-416' coro=<Menu._internal_loop() done, defined at /usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py:517> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 533, in _internal_loop
+    done, pending = await asyncio.wait(
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 384, in wait
+    return await _wait(fs, timeout, return_when, loop)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 491, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 580, in _internal_loop
+    await self.clear()
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 932, in clear
+    await self._update_view()
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 876, in _update_view
+    await self.message.edit(view=self)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/message.py", line 1508, in edit
+    data = await self._state.http.edit_message(self.channel.id, self.id, **payload)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/http.py", line 300, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 400, in _request
+    raise RuntimeError("Session is closed")
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished name='Task-290' coro=<Menu._internal_loop() done, defined at /usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py:517> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 533, in _internal_loop
+    done, pending = await asyncio.wait(
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 384, in wait
+    return await _wait(fs, timeout, return_when, loop)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 491, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 580, in _internal_loop
+    await self.clear()
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 932, in clear
+    await self._update_view()
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/ext/menus/menus.py", line 876, in _update_view
+    await self.message.edit(view=self)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/message.py", line 1508, in edit
+    data = await self._state.http.edit_message(self.channel.id, self.id, **payload)
+  File "/usr/local/lib/python3.10/dist-packages/nextcord/http.py", line 300, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 400, in _request
+    raise RuntimeError("Session is closed")
+RuntimeError: Session is closed
+[2J
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.commands.help loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.commands.owner loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.commands.moderation loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.commands.anime loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.commands.xash loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.listeners.events loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.listeners.errors loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.commands.test loaded
+[34m11:33:00[39m [1m[[34mINFO[39m][0m cogs.listeners.test loaded
+
+[32m11:33:00[39m [1m[[32mINFO[39m][0m HoshinoBot#4042 active

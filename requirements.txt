@@ -1,0 +1,7 @@
+nextcord
+nextcord-ext-menus
+asyncio
+aiohttp
+aiosqlite
+asyncio_dgram
+pydantic

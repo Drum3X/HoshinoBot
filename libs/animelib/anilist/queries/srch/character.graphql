@@ -1,0 +1,40 @@
+query ($id: Int, $page: Int, $perPage: Int, $search: String) {
+    Page (page: $page, perPage: $perPage) {
+        pageInfo {
+            total
+            currentPage
+            lastPage
+            hasNextPage
+            perPage
+        }
+        characters (id: $id, search: $search) {
+            id
+            name {
+                first
+                last
+                full
+                native
+            }
+            image {
+                medium
+                large                
+            }
+            siteUrl
+            favourites
+            description
+            media {
+                edges {
+                    node {
+                        id
+                        title {
+                            romaji
+                            english
+                            native
+                        }                        
+                        type
+                    }
+                }
+            }
+        }
+    }
+}

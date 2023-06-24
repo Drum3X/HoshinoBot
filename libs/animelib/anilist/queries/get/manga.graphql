@@ -1,0 +1,117 @@
+query ($id: Int, $page: Int, $perPage: Int) {
+    Page (page: $page, perPage: $perPage) {
+        pageInfo {
+            total
+            currentPage
+            lastPage
+            hasNextPage
+            perPage
+        }
+        media (id: $id, type: MANGA) {
+            id
+            title {
+                romaji
+                english
+                native
+            }
+            siteUrl
+            volumes
+            chapters
+            description            
+            format
+            status
+            genres
+            isAdult
+            tags {
+                name
+            }
+            studios {
+                nodes {
+                    id
+                    name
+                }
+            }
+            startDate {
+                year
+                month
+                day
+            }
+            endDate {
+                year
+                month
+                day
+            }
+            season
+            seasonYear
+            seasonInt
+            countryOfOrigin
+            coverImage {
+                medium
+                large
+                extraLarge
+            }
+            bannerImage
+            source
+            hashtag
+            synonyms
+            meanScore
+            averageScore
+            popularity
+            rankings {
+                type
+                allTime
+                format
+                rank
+                year
+                season
+            }            
+            trailer {
+                id
+                thumbnail
+                site
+            }
+            staff(sort: FAVOURITES_DESC) {
+                edges {
+                    node {
+                        id
+                        name {
+                            first
+                            full
+                            native
+                            last
+                        }                        
+                    }
+                    role
+                }
+            }
+            characters(sort: FAVOURITES_DESC) {
+                edges {
+                    node {
+                        id
+                        name {
+                            first
+                            last
+                            full
+                            native
+                        }                       
+                    }
+                    role
+                }
+            }
+            relations {
+                edges {
+                    node {
+                        id
+                        title {
+                            romaji    
+                            english 
+                            native                        
+                        }
+                        type                        
+                    }
+                    relationType(version: 2)
+                }
+            }
+        }
+    }
+}
